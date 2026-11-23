@@ -1,0 +1,483 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+
+    background: #eeeeee;
+
+    color: #0a2d70;
+}
+
+
+/* =========================
+   PÁGINA
+========================= */
+
+.pagina {
+    width: 100%;
+    max-width: 1450px;
+
+    min-height: 100vh;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    height: 145px;
+
+    padding: 20px 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 84, 185, 1) 0%,
+            rgba(0, 84, 185, .95) 48%,
+            rgba(0, 69, 156, .83) 100%
+        ),
+        url("../assets/Foto_cidade\ 2026.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.cabecalho-esquerda {
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+.logo {
+    width: 300px;
+    max-height: 100px;
+
+    object-fit: contain;
+}
+
+
+.linha-vertical {
+    width: 2px;
+    height: 62px;
+
+    background: rgba(255, 255, 255, .75);
+}
+
+
+.transparencia {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 23px;
+}
+
+
+.transparencia span {
+    font-weight: 400;
+}
+
+
+.transparencia strong {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.slogan {
+    margin-right: 30px;
+
+    font-size: 25px;
+    line-height: 1.1;
+
+    font-style: italic;
+
+    text-align: center;
+
+    transform: rotate(-4deg);
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    padding: 25px 45px 25px;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo-pagina {
+    margin-bottom: 18px;
+}
+
+
+.titulo-pagina h1 {
+    font-size: 50px;
+
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #082a68;
+}
+
+
+.titulo-pagina p {
+    margin-top: 4px;
+
+    font-size: 25px;
+    font-weight: 400;
+
+    color: #657696;
+}
+
+
+/* =========================
+   FOTO + TABELA
+========================= */
+
+.veiculo-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1.1fr;
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   FOTO
+========================= */
+
+.foto-veiculo {
+    padding: 8px;
+
+    background: #ffffff;
+
+    border: 2px solid #d7e9fb;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+.foto-veiculo img {
+    width: 100%;
+    height: 100%;
+
+    min-height: 630px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 11px;
+}
+
+
+/* =========================
+   BLOCO DE DADOS
+========================= */
+
+.dados-veiculo {
+    background: #fdfefe;
+
+    border: 2px solid #d7e9fb;
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+/* =========================
+   TÍTULO DA TABELA
+========================= */
+
+.titulo-dados {
+    min-height: 75px;
+
+    padding: 14px 26px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #f4f9ff
+    );
+
+    border-bottom: 1px solid #d7e5f4;
+}
+
+
+.icone-documento {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0754a8;
+
+    font-size: 34px;
+}
+
+
+.titulo-dados h2 {
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: #092c70;
+}
+
+
+/* =========================
+   TABELA
+========================= */
+
+.tabela-wrapper {
+    width: 100%;
+}
+
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+}
+
+
+th,
+td {
+    height: 69px;
+
+    padding: 10px 28px;
+
+    border-bottom: 1px solid #d7e5f4;
+
+    vertical-align: middle;
+}
+
+
+th {
+    width: 47%;
+
+    text-align: left;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #0753b0;
+
+    background: rgba(243, 248, 255, .6);
+}
+
+
+td {
+    font-size: 21px;
+    font-weight: 700;
+
+    color: #0c2768;
+
+    background: #ffffff;
+}
+
+
+th + td {
+    border-left: 1px solid #d7e5f4;
+}
+
+
+/* REMOVE LINHA FINAL */
+
+tr:last-child th,
+tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+    min-width: 150px;
+
+    padding: 8px 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 30px;
+
+    font-weight: 700;
+}
+
+
+.status.ativo {
+    background: #dff4e4;
+
+    color: #08762f;
+    font-size: 20px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    min-height: 90px;
+
+    padding: 18px 65px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+
+    background: #0560bd;
+
+    color: white;
+}
+
+
+.rodape-secretaria {
+    display: flex;
+    align-items: center;
+
+    gap: 22px;
+
+    white-space: nowrap;
+}
+
+
+.rodape-secretaria i {
+    font-size: 34px;
+}
+
+
+.rodape-secretaria strong {
+    font-size: 18px;
+
+    font-weight: 600;
+}
+
+
+.rodape-divisor {
+    width: 1px;
+    height: 42px;
+
+    background: rgba(255, 255, 255, .75);
+}
+
+
+.rodape p {
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.6px;
+    text-align: center;
+
+    line-height: 1.4;
+
+    color: rgba(255, 255, 255, .9);
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .cabecalho {
+        height: auto;
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .slogan {
+        margin: 0;
+    }
+
+
+    .conteudo {
+        padding: 25px 20px;
+    }
+
+
+    .titulo-pagina h1 {
+        font-size: 38px;
+    }
+
+
+    .titulo-pagina p {
+        font-size: 19px;
+    }
+
+
+    .veiculo-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .foto-veiculo img {
+        min-height: auto;
+    }
+
+
+    .rodape {
+        padding: 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .rodape > .rodape-divisor {
+        display: none;
+    }
+
+}
